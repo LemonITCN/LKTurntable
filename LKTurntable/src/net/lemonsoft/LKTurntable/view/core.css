@@ -1,0 +1,32 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* 若要在项目中引用，需要引入下面的css部分 */
+#lk-turntable{
+    width: 500px;
+    height:500px;
+    display: inline-block;
+    position: relative;
+}
+#lk-turntable img{
+    position: absolute;
+}
+#lk-turntable #lk-turntable-back{
+    width: 100%;
+    height: 100%;
+}
+#lk-turntable #lk-turntable-panel{
+    width: 84%;
+    height: 84%;
+    left: 8%;
+    top: 8%;
+}
+#lk-turntable #lk-turntable-play{
+    width: 30%;
+    left: 35%;
+    top: 36%;
+}
+/* 若要在项目中引用，需要引入上面的css部分 */

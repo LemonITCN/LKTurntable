@@ -1,0 +1,8 @@
+#rootWebView{
+    -fx-pref-width: 500px;
+    -fx-pref-height: 500px;
+}
+#prizesTableView{
+    -fx-pref-width: 400px;
+    -fx-pref-height: 460px;
+}
