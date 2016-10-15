@@ -6,3 +6,8 @@
     -fx-pref-width: 400px;
     -fx-pref-height: 460px;
 }
+.operateBox{
+    -fx-alignment: baseline-center;
+    -fx-padding: 4px;
+    -fx-spacing: 6px;
+}

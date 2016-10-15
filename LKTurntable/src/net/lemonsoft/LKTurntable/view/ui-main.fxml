@@ -4,30 +4,41 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 <FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="900" prefHeight="500"
           fx:controller="net.lemonsoft.LKTurntable.logic.ViewController">
     <HBox>
         <!--转盘浏览器-->
         <WebView fx:id="rootWebView"/>
-        <!--商品列表-->
-        <TableView fx:id="prizesTableView">
-            <columns>
-                <TableColumn text="名称" prefWidth="180">
-                    <cellValueFactory>
-                        <PropertyValueFactory property="name"/>
-                    </cellValueFactory>
-                </TableColumn>
-                <TableColumn text="库存量" prefWidth="120">
-                    <cellValueFactory>
-                        <PropertyValueFactory property="count"/>
-                    </cellValueFactory>
-                </TableColumn>
-                <TableColumn text="中奖率" prefWidth="120">
-                    <cellValueFactory>
-                        <PropertyValueFactory property="chance"/>
-                    </cellValueFactory>
-                </TableColumn>
-            </columns>
-        </TableView>
+        <VBox>
+            <!--商品列表-->
+            <TableView fx:id="prizesTableView">
+                <columns>
+                    <TableColumn text="名称" prefWidth="180">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="库存量" prefWidth="120">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="count"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="中奖率" prefWidth="120">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="chance"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+            <HBox styleClass="operateBox">
+                <Button text="重新抽奖"/>
+                <Button text="设置转盘"/>
+                <Button text="添加奖品"/>
+                <Button text="删除奖品"/>
+                <Button text="修改奖品"/>
+            </HBox>
+        </VBox>
     </HBox>
 </FlowPane>
