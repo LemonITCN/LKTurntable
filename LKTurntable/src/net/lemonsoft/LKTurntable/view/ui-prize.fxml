@@ -2,7 +2,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.web.WebView?>
 <FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="500"
-          fx:controller="net.lemonsoft.LKTurntable.logic.ViewController">
+          fx:controller="net.lemonsoft.LKTurntable.viewController.MainViewController">
     <HBox>
         <WebView fx:id="rootWebView"/>
     </HBox>

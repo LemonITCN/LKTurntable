@@ -1,4 +1,4 @@
-package net.lemonsoft.LKTurntable.logic;
+package net.lemonsoft.LKTurntable.viewController;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
  * 主UI视图控制器
  * Created by lemonsoft on 16-10-14.
  */
-public class ViewController implements Initializable {
+public class MainViewController implements Initializable {
 
     @FXML
     private WebView rootWebView;
