@@ -15,29 +15,34 @@
             <!--商品列表-->
             <TableView fx:id="prizesTableView">
                 <columns>
-                    <TableColumn text="名称" prefWidth="180">
+                    <TableColumn text="名称" prefWidth="120">
                         <cellValueFactory>
                             <PropertyValueFactory property="name"/>
                         </cellValueFactory>
                     </TableColumn>
-                    <TableColumn text="库存量" prefWidth="120">
+                    <TableColumn text="库存量" prefWidth="100">
                         <cellValueFactory>
                             <PropertyValueFactory property="count"/>
                         </cellValueFactory>
                     </TableColumn>
-                    <TableColumn text="中奖率" prefWidth="120">
+                    <TableColumn text="中奖率" prefWidth="90">
                         <cellValueFactory>
                             <PropertyValueFactory property="chance"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="是否真实商品" prefWidth="100">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="realPrize"/>
                         </cellValueFactory>
                     </TableColumn>
                 </columns>
             </TableView>
             <HBox styleClass="operateBox">
-                <Button text="重新抽奖"/>
-                <Button text="设置转盘"/>
-                <Button text="添加奖品"/>
-                <Button text="删除奖品"/>
-                <Button text="修改奖品"/>
+                <Button text="重新抽奖" onMouseClicked="#reset"/>
+                <Button text="设置转盘" onMouseClicked="#showSetTurntablePanelImageStage"/>
+                <Button text="添加奖品" onMouseClicked="#showCreatePrizeStage"/>
+                <Button text="删除奖品" fx:id="deletePrizeButton" disable="true" onMouseClicked="#deletePrize"/>
+                <Button text="修改奖品" fx:id="setPrizeButton" disable="true" onMouseClicked="#showSetPrizeStage"/>
             </HBox>
         </VBox>
     </HBox>

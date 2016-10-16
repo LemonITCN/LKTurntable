@@ -1,21 +1,14 @@
 package net.lemonsoft.LKTurntable;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import net.lemonsoft.LKTurntable.viewController.MainViewController;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/ui-main.fxml"));
-        root.getStylesheets().add(getClass().getResource("view/ui-main.css").toExternalForm());
-        primaryStage.setTitle("LKTurntable");
-        primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        new MainViewController().createMainStage().show();// 创建并显示主界面
     }
 
 

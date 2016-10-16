@@ -1,9 +1,31 @@
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.web.WebView?>
-<FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="500"
-          fx:controller="net.lemonsoft.LKTurntable.viewController.MainViewController">
-    <HBox>
-        <WebView fx:id="rootWebView"/>
-    </HBox>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import org.controlsfx.control.ToggleSwitch?>
+<FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="400" prefHeight="260"
+          fx:controller="net.lemonsoft.LKTurntable.viewController.PrizeViewController">
+    <VBox>
+        <HBox styleClass="lineHBox">
+            <Label text="奖品名称："/>
+            <TextField fx:id="prizeNameTextField"/>
+        </HBox>
+        <HBox styleClass="lineHBox">
+            <Label text="中奖概率："/>
+            <TextField fx:id="prizeChanceTextField"/>
+        </HBox>
+        <HBox styleClass="lineHBox">
+            <Label text="奖品库存："/>
+            <TextField fx:id="prizeCountTextField"/>
+        </HBox>
+        <HBox styleClass="lineHBox">
+            <Label text="是否真实奖品："/>
+            <ToggleSwitch fx:id="realPrizeSwitch"/>
+        </HBox>
+        <HBox styleClass="lineHBox">
+            <Button fx:id="commitButton" onMouseClicked="#commit" text="提交"/>
+        </HBox>
+    </VBox>
 </FlowPane>

@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="400" prefHeight="120"
+          fx:controller="net.lemonsoft.LKTurntable.viewController.SetTurntablePanelViewController">
+    <VBox>
+        <HBox styleClass="lineHBox">
+            <Label text="转盘图片URL："/>
+            <TextField fx:id="turntablePanelImageUrlField"/>
+        </HBox>
+        <HBox styleClass="lineHBox">
+            <Button fx:id="commitButton" onMouseClicked="#commit" text="提交"/>
+        </HBox>
+    </VBox>
+</FlowPane>

@@ -86,4 +86,14 @@ public class PrizeManager {
     public int countPrizes() {
         return this.prizeList.size();
     }
+
+    /**
+     * 获取指定索引的奖品信息
+     *
+     * @param index 要获取的奖品信息的索引
+     * @return 查询到的奖品信息
+     */
+    public PrizeModel getPrizeByIndex(int index) {
+        return index >= this.prizeList.size() ? null : this.prizeList.get(index);
+    }
 }

@@ -1,0 +1,17 @@
+.lineHBox{
+    -fx-spacing: 20px;
+    -fx-padding: 10px 10px;
+    -fx-alignment: baseline-center;
+}
+.lineHBox .label{
+    -fx-pref-height: 26px;
+}
+.lineHBox .text-field{
+    -fx-pref-width: 300px;
+    -fx-pref-height: 34px;
+}
+.lineHBox #commitButton{
+    -fx-pref-width: 340px;
+    -fx-pref-height: 44px;
+    -fx-cursor: hand;
+}
